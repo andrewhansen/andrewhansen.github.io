@@ -1,22 +1,51 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title></title>
-<link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-<nav>
-<a href="#" class="menu-toggle"  id="menu-toggle"><span class="i i-menu"></span></a>
-{% assign pages = site.html_pages | sort:"nav-position"  %}
-<ul class="nav">
-{% for p in pages %}
-{% if p.nav != false %}
-<li>
-<a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
-{{ p.title }}
-</a>
-</li>
-{% endif %}
-{% endfor %}
-</ul>
-</nav>
+	<head>
+		<title></title>
+		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/_assets/style.css">
+	</head>
+	<body>
+		<div class="grid">
+			<div class="nav-wrapper grid_item one-quarter palm--one-whole lap--one-quarter desk--one-fifth">
+				<nav class="">
+					<a href="#" class="menu-toggle"  id="menu-toggle"><span class="i i-menu"></span></a>
+					<a href="/index.html"><img class="logo" src="/img/logo-150.png"></a>
+					<ul class="nav-main">
+						<li>
+							<a class="nav-item"  href="/about.html">About</a>
+						</li>
+						<li>
+							<a class="nav-item"  href="/illustration.html">Illustration</a>
+						</li>
+						<li>
+							<a class="nav-item"  href="/graphics.html">Graphics</a>
+						</li>
+						<li>
+							<a class="nav-item"  href="/web-design.html">Web Design</a>
+						</li>
+						<li>
+							<a class="nav-item" href="/contact.html">Contact</a>
+						</li>
+					</ul>
+					<ul class="social-nav">
+						<li>
+							<a  href="https://www.facebook.com/andyhans3n">Facebook</a>
+						</li>
+						<li>
+							<a  href="https://instagram.com/andyhans3n/">Instagram</a>
+						</li>
+						<li>
+							<a  href="https://twitter.com/andyhans3n">Twitter</a>
+						</li>
+						<li>
+							<a  href="https://dribbble.com/ahansen">Dribbble</a>
+						</li>
+						<li>
+							<a class="active" href="https://github.com/andrewhansen">Github</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="content-wrapper grid_item three-quarters palm--one-whole lap--three-quarters desk--four-fifths">
+				
