@@ -1,6 +1,14 @@
 {% include header.html %}
+
+{% if post.heroTitle %}
 <div class="hero-wrapper">
+	<h1>{{ post.heroTitle }}</h1>
+</div>
+{% endif %}
+
+<div class="content-wrapper">
 	<h1>{{ page.title }}</h1>
-	<p>{{ page.content }}</p>
+	{{ page.content }}
+</div>
 
 {% include footer.html %}
