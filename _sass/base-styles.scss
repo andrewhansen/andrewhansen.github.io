@@ -24,15 +24,20 @@ nav {
 	}
 }
 
+h1{
+	margin: 0;
+}
+
 .grid {
     margin: 0;
 }
 
 .grid_item {
     display: inline-block;
-    float: left;
 }
 
+
+// Nav
 .nav-wrapper{
 	background-color: #0A0D0D;
 	height: 100%;
@@ -56,6 +61,22 @@ nav {
     padding: 25px;
 }
 
+// Hero
+
+.hero--banner-1{
+	display: block;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    width: 100%;
+    display: block;
+    background-image: url(https://raw.githubusercontent.com/woolyink/woolyink.github.io/master/img/banner-home.jpg);
+    background-color: #000;
+    background-size: cover;
+    background-position: top;
+}
+
+// Body
 .content-wrapper{
 	background-color: yellow;
 	float: right;
@@ -66,6 +87,32 @@ nav {
 .content-block{
 	padding: 25px;
 }
+
+// Footer
+
+.footer-wrapper{
+	background-color: green;
+	float: right;
+    min-height: 100%;
+    position: relative;
+}
+
+
+
+.social-nav{
+	list-style-type: none;	
+	display: block;
+}
+
+.social-nav-item{
+	display: inline-block;
+}
+
+.social-icon{
+	text-decoration: none;
+	font-size: 25px;
+}
+
 
 footer{
 	background-color: #D7F1FF;
