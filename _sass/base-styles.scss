@@ -4,6 +4,7 @@ body{
     background-attachment: fixed;
     background-position: 0 0;
     background-image: url("/img/natural-paper.png");
+    color: $ash;
 }
 
 img {
@@ -40,7 +41,7 @@ nav {
 }
 
 .border-bot{
-	border-bottom: solid 1px #B6B6B6;
+	border-bottom: solid 1px $ash;
 	padding-bottom: 25px;
 }
 
@@ -71,7 +72,7 @@ h2{
 	    left: 50%;
 	    margin-left: -30px;
 	    width: 60px;
-	    background-color: #222222;
+	    background-color: $dark-blue;
 	}
 }
 
@@ -104,14 +105,13 @@ h2{
 
 // Nav
 .nav-wrapper{
-	background-color: #fff;
-	border-right: solid 1px #B6B6B6;
+	background-color: rgba(250, 250, 250, 0.8);
+	border-right: solid 1px $egg-shell;
 
 	.nav-item{
 		color:#000;
 		padding: 10px 25px;
 	}
-
 }
 
 
@@ -137,7 +137,17 @@ h2{
     width: 100%;
     display: block;
     background-image: url(/img/port-banner.jpg);
-    background-color: #000;
+    background-size: cover;
+    background-position: top;
+}
+
+.hero--banner-ice-age{
+	display: block;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 100%;
+    display: block;
+    background-image: url(/img/ice-age-banner.jpg);
     background-size: cover;
     background-position: top;
 }
@@ -157,7 +167,7 @@ h2{
 	    left: 50%;
 	    margin-left: -30px;
 	    width: 60px;
-	    background-color: #222222;
+	    background-color: $dark-blue;
 	}
 }
 
@@ -172,14 +182,14 @@ h2{
 	.nav-item{
 		padding: 25px;
 		font-size: 25px;
-		color: #fff;
+		color: $white;
 		text-decoration: none;
 	}
 }
 
 // Body
 .content-wrapper{
-	background-color: #fff;
+	background-color: $white;
     min-height: 100%;
     position: relative;
 }
@@ -190,25 +200,19 @@ h2{
 
 // Buttons
 .myButton {
-	-moz-box-shadow:inset 0px 39px 0px -24px #e67a73;
-	-webkit-box-shadow:inset 0px 39px 0px -24px #e67a73;
-	box-shadow:inset 0px 39px 0px -24px #e67a73;
-	background-color:#e4685d;
-	-moz-border-radius:4px;
-	-webkit-border-radius:4px;
-	border-radius:4px;
-	border:1px solid #ffffff;
+	background-color: $white;
+	border: 1px solid $dark-blue;
 	display:inline-block;
 	cursor:pointer;
-	color:#ffffff;
+	color: $dark-blue;
 	font-family:Arial;
-	font-size:15px;
-	padding:6px 15px;
+	font-size:20px;
+	padding:10px 20px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #b23e35;
 }
 .myButton:hover {
-	background-color:#eb675e;
+	background-color: $dark-blue;
+	color: $white;
 }
 .myButton:active {
 	position:relative;
@@ -223,9 +227,9 @@ h2{
 // Footer
 
 footer{
-	background-color: rgba(250, 250, 250, 0.8);
+	background-color: rgba(255, 255, 255, 0.8);
 	padding: 0 25px;
-	border-top: solid 1px #B6B6B6;
+	border-top: solid 1px $egg-shell;
 }
 
 .footer-wrapper{
@@ -247,7 +251,7 @@ footer{
 .social-icon{
 	text-decoration: none;
 	font-size: 25px;
-	color: #6A6A6A;
+	color: $ash;
 }
 
 .footer-copy{
@@ -257,6 +261,16 @@ footer{
 @media (max-width: 719px) {
 	.logo {
     height: 70px;
+	}
+
+	.nav-main .nav-item{
+		padding: 25px;
+		border-top: solid 1px $egg-shell;
+	}
+
+	.nav-item-wrapper {
+    	display: inline-block;
+    	width: 49%;
 	}
 }
 
