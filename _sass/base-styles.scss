@@ -1,5 +1,9 @@
 body{
 	margin: 0;
+	background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: 0 0;
+    background-image: url("/img/natural-paper.png");
 }
 
 img {
@@ -35,16 +39,27 @@ nav {
 	text-align: center;
 }
 
+.border-bot{
+	border-bottom: solid 1px #B6B6B6;
+	padding-bottom: 25px;
+}
+
 // utility end
 
 // heading
 h1{
 	margin: 0;
+	font-size: 50px;
 }
+
+h2{
+	font-size: 35px;
+}
+
 
 .heading{
 	text-align: center;
-    margin: 0 0 30px 0;
+    margin: 35px 0 35px 0;
     position: relative;
 	
 	&--border:after {
@@ -89,10 +104,11 @@ h1{
 
 // Nav
 .nav-wrapper{
-	background-color: #0A0D0D;
+	background-color: #fff;
+	border-right: solid 1px #B6B6B6;
 
 	.nav-item{
-		color:#fff;
+		color:#000;
 		padding: 10px 25px;
 	}
 
@@ -117,14 +133,48 @@ h1{
 .hero--banner-1{
 	display: block;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: 50% 50%;
     width: 100%;
     display: block;
-    background-image: url(https://raw.githubusercontent.com/woolyink/woolyink.github.io/master/img/banner-home.jpg);
+    background-image: url(/img/port-banner.jpg);
     background-color: #000;
     background-size: cover;
     background-position: top;
+}
+
+.hero-wrapper h1{
+	padding-top: 100px;
+	text-align: center;
+    margin-bottom: 35px;
+    position: relative;
+	
+	&:after {
+	    content: "";
+	    display: block;
+	    height: 3px;
+	    position: absolute;
+	    bottom: -15px;
+	    left: 50%;
+	    margin-left: -30px;
+	    width: 60px;
+	    background-color: #222222;
+	}
+}
+
+.nav-hero{
+	display: block;
+	padding: 0 0 100px;
+
+	.nav-item-wrapper{
+		display: inline-block;
+	}
+
+	.nav-item{
+		padding: 25px;
+		font-size: 25px;
+		color: #fff;
+		text-decoration: none;
+	}
 }
 
 // Body
@@ -138,16 +188,47 @@ h1{
 	padding: 25px;
 }
 
+// Buttons
+.myButton {
+	-moz-box-shadow:inset 0px 39px 0px -24px #e67a73;
+	-webkit-box-shadow:inset 0px 39px 0px -24px #e67a73;
+	box-shadow:inset 0px 39px 0px -24px #e67a73;
+	background-color:#e4685d;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:6px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+}
+.myButton:hover {
+	background-color:#eb675e;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+.example-wrapper{
+	margin-bottom: 25px;
+}
+
 // Footer
 
 footer{
-	background-color: #D7F1FF;
+	background-color: rgba(250, 250, 250, 0.8);
 	padding: 0 25px;
+	border-top: solid 1px #B6B6B6;
 }
 
 .footer-wrapper{
-	background-color: green;
-	float: right;
     min-height: 100%;
     position: relative;
 }
@@ -155,28 +236,31 @@ footer{
 .social-nav{
 	list-style-type: none;	
 	display: block;
+	padding-left: 0;
 }
 
 .social-nav-item{
 	display: inline-block;
-	margin-left: 25px;
+	margin-right: 25px;
 }
 
 .social-icon{
 	text-decoration: none;
 	font-size: 25px;
+	color: #6A6A6A;
 }
 
-@media (max-width: 479px) {
-	.footer-copy{
-		text-align: center;
-	}
+.footer-copy{
+	text-align: center;
+}
+
+@media (max-width: 719px) {
 	.logo {
     height: 70px;
 	}
 }
 
-@media (min-width: 480px) {
+@media (min-width: 720px) {
 	.nav-wrapper{
 		position: fixed;
 	    left: 0px;
@@ -199,7 +283,8 @@ footer{
 	    width: 80%;
 	    height: 50px;
 	}
-	.social-nav{
-		float: right;
+	.footer-copy{
+		text-align: right;
+		margin-right: 50px;
 	}
 }

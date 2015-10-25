@@ -3,6 +3,19 @@
 {% if page.heroTitle %}
 <div class="center hero-wrapper {% if page.heroHelper %} hero--{{ page.heroHelper }} {% endif %}">
 	<h1>{{ page.heroTitle }}</h1>
+	{% if page.subheronav %}
+	<ul class="nav-hero center">
+		<li class="nav-item-wrapper">
+			<a class="nav-item"  href="/index.html">Illustration</a>
+		</li>
+		<li class="nav-item-wrapper">
+			<a class="nav-item"  href="/about.html">Graphic Design</a>
+		</li>
+		<li class="nav-item-wrapper">
+			<a class="nav-item"  href="/blog.html">Web Design</a>
+		</li>
+	</ul>
+	{% endif %}
 </div>
 {% endif %}
 
