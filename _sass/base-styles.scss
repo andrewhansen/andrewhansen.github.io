@@ -29,9 +29,37 @@ nav {
 	}
 }
 
+// utility 
+
+.center{
+	text-align: center;
+}
+
+// utility end
+
+// heading
 h1{
 	margin: 0;
 }
+
+.heading{
+	text-align: center;
+    margin: 0 0 30px 0;
+    position: relative;
+	
+	&--border:after {
+	    content: "";
+	    display: block;
+	    height: 3px;
+	    position: absolute;
+	    bottom: -15px;
+	    left: 50%;
+	    margin-left: -30px;
+	    width: 60px;
+	    background-color: #222222;
+	}
+}
+
 
 .grid {
 	list-style: none;
@@ -42,6 +70,7 @@ h1{
 
 .grid_item {
     display: inline-block;
+    width: 100%;
     padding-left: 25px;
     vertical-align: top;
     -webkit-box-sizing: border-box;
@@ -61,10 +90,6 @@ h1{
 // Nav
 .nav-wrapper{
 	background-color: #0A0D0D;
-	height: 100%;
-    overflow: auto;
-    z-index: 20;
-    min-height: 600px;
 
 	.nav-item{
 		color:#fff;
@@ -79,22 +104,6 @@ h1{
     overflow: visible;
     height: auto;
     width: 100%;
-}
-
-@media (min-width: 480px) {
-	.nav-wrapper{
-		position: fixed;
-	    left: 0px;
-	    width: 20%;
-	    height: 100%;
-	    overflow: auto;
-	}
-	.site-content-wrapper {
-	    overflow: auto;
-	    width: 80%;
-	    height: 100%;
-	    margin-left: 20%;
-	}
 }
 
 .logo {
@@ -131,14 +140,17 @@ h1{
 
 // Footer
 
+footer{
+	background-color: #D7F1FF;
+	padding: 0 25px;
+}
+
 .footer-wrapper{
 	background-color: green;
 	float: right;
     min-height: 100%;
     position: relative;
 }
-
-
 
 .social-nav{
 	list-style-type: none;	
@@ -147,6 +159,7 @@ h1{
 
 .social-nav-item{
 	display: inline-block;
+	margin-left: 25px;
 }
 
 .social-icon{
@@ -154,8 +167,39 @@ h1{
 	font-size: 25px;
 }
 
+@media (max-width: 479px) {
+	.footer-copy{
+		text-align: center;
+	}
+	.logo {
+    height: 70px;
+	}
+}
 
-footer{
-	background-color: #D7F1FF;
-	padding: 25px;
+@media (min-width: 480px) {
+	.nav-wrapper{
+		position: fixed;
+	    left: 0px;
+	    width: 20%;
+	    height: 100%;
+	    overflow: auto;
+	    z-index: 20;
+	    min-height: 600px;
+	}
+	.site-content-wrapper {
+	    overflow: auto;
+	    width: 80%;
+	    height: 100%;
+	    margin-left: 20%;
+	    margin-bottom: 50px;
+	}
+	footer{
+	    position: fixed;
+	    bottom: 0;
+	    width: 80%;
+	    height: 50px;
+	}
+	.social-nav{
+		float: right;
+	}
 }
