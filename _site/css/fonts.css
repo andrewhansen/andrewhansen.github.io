@@ -1,3 +1,12 @@
+@font-face{ 
+	font-family: 'COMMUNIS';
+	src: url('/fonts/COMMUNIS/COMMUNIS-webfont.eot');
+	src: url('/fonts/COMMUNIS/COMMUNIS-webfont.eot?iefix') format('eot'),
+	     url('/fonts/COMMUNIS/COMMUNIS-webfont.woff') format('woff'),
+	     url('/fonts/COMMUNIS/COMMUNIS-webfont.ttf') format('truetype'),
+	     url('/fonts/COMMUNIS/COMMUNIS-webfont.svg#webfont') format('svg');
+}
+
 @font-face {
 	font-family: 'icomoon';
 	src:url('/fonts/icomoon.eot?-h82il1');

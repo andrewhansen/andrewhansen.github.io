@@ -5,6 +5,8 @@ body{
     background-position: 0 0;
     background-image: url("/img/natural-paper.png");
     color: $ash;
+    font-size: 18px;
+    font-family: Arial, Helvetica, "Helvetica Neue", sans-serif;
 }
 
 img {
@@ -41,7 +43,7 @@ nav {
 }
 
 .border-bot{
-	border-bottom: solid 1px $ash;
+	border-bottom: solid 1px $egg-shell;
 	padding-bottom: 25px;
 }
 
@@ -55,6 +57,12 @@ h1{
 
 h2{
 	font-size: 35px;
+}
+
+h1,
+h2,
+h3,{
+	font-family: COMMUNIS;
 }
 
 
@@ -72,7 +80,7 @@ h2{
 	    left: 50%;
 	    margin-left: -30px;
 	    width: 60px;
-	    background-color: $dark-blue;
+	    background-color: $red;
 	}
 }
 
@@ -105,12 +113,19 @@ h2{
 
 // Nav
 .nav-wrapper{
-	background-color: rgba(250, 250, 250, 0.8);
+	background-color: rgba(255, 255, 255, 0.8);
 	border-right: solid 1px $egg-shell;
 
 	.nav-item{
-		color:#000;
+		color:$ash-light;
 		padding: 10px 25px;
+		text-transform: uppercase;
+		font-family: Arial, Helvetica, "Helvetica Neue", sans-serif;
+		letter-spacing: 1px;
+    	font-size: 16px;
+	}
+	.nav-item:hover{
+		color: $ash;
 	}
 }
 
@@ -130,6 +145,26 @@ h2{
 
 // Hero
 
+.hero-wrapper h1{
+	padding-top: 100px;
+	text-align: center;
+    margin-bottom: 35px;
+    position: relative;
+    color: $ash;
+	
+	&:after {
+	    content: "";
+	    display: block;
+	    height: 3px;
+	    position: absolute;
+	    bottom: -15px;
+	    left: 50%;
+	    margin-left: -30px;
+	    width: 60px;
+	    background-color: $red;
+	}
+}
+
 .hero--banner-1{
 	display: block;
     background-repeat: no-repeat;
@@ -139,6 +174,9 @@ h2{
     background-image: url(/img/port-banner.jpg);
     background-size: cover;
     background-position: top;
+    h1{
+		color: $white;
+    }
 }
 
 .hero--banner-ice-age{
@@ -150,25 +188,9 @@ h2{
     background-image: url(/img/ice-age-banner.jpg);
     background-size: cover;
     background-position: top;
-}
-
-.hero-wrapper h1{
-	padding-top: 100px;
-	text-align: center;
-    margin-bottom: 35px;
-    position: relative;
-	
-	&:after {
-	    content: "";
-	    display: block;
-	    height: 3px;
-	    position: absolute;
-	    bottom: -15px;
-	    left: 50%;
-	    margin-left: -30px;
-	    width: 60px;
-	    background-color: $dark-blue;
-	}
+    h1{
+		color: $white;
+    }
 }
 
 .nav-hero{
@@ -184,6 +206,7 @@ h2{
 		font-size: 25px;
 		color: $white;
 		text-decoration: none;
+		font-family: COMMUNIS;
 	}
 }
 
@@ -199,22 +222,21 @@ h2{
 }
 
 // Buttons
-.myButton {
+.button {
 	background-color: $white;
-	border: 1px solid $dark-blue;
+	border: 3px solid $dark-blue;
 	display:inline-block;
 	cursor:pointer;
 	color: $dark-blue;
-	font-family:Arial;
 	font-size:20px;
 	padding:10px 20px;
 	text-decoration:none;
 }
-.myButton:hover {
+.button:hover {
 	background-color: $dark-blue;
 	color: $white;
 }
-.myButton:active {
+.button:active {
 	position:relative;
 	top:1px;
 }
@@ -251,11 +273,18 @@ footer{
 .social-icon{
 	text-decoration: none;
 	font-size: 25px;
-	color: $ash;
+	color: $ash-light;
+}
+
+.social-icon:hover{
+	color: $dark-blue;
 }
 
 .footer-copy{
 	text-align: center;
+	font-size: 14px;
+	margin: 20px 50px 20px 0;
+	color:$ash-light;
 }
 
 @media (max-width: 719px) {
@@ -271,6 +300,17 @@ footer{
 	.nav-item-wrapper {
     	display: inline-block;
     	width: 49%;
+	}
+	.hero-wrapper h1{
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.hero-wrapper h1:after{
+		bottom: 35px
+	}
+
+	.nav-hero{
+		display: none;
 	}
 }
 
@@ -299,6 +339,5 @@ footer{
 	}
 	.footer-copy{
 		text-align: right;
-		margin-right: 50px;
 	}
 }
