@@ -343,3 +343,17 @@ footer{
 		text-align: right;
 	}
 }
+
+@media (min-height: 620px) {
+	.hero--banner-1{
+		padding: 145px 0;
+	    
+	}
+}
+
+@media (min-height: 1020px) {
+	.hero--banner-1{
+		padding: 400px 0;
+	    
+	}
+}
