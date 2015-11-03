@@ -43,7 +43,7 @@ nav {
 }
 
 .border-bot{
-	border-bottom: solid 1px $egg-shell;
+	border-bottom: solid 3px $egg-shell;
 	padding-bottom: 25px;
 }
 
@@ -114,7 +114,7 @@ h3,{
 // Nav
 .nav-wrapper{
 	background-color: rgba(255, 255, 255, 0.8);
-	border-right: solid 1px $egg-shell;
+	border-right: solid 3px $egg-shell;
 
 	.nav-item{
 		color:$ash-light;
@@ -252,7 +252,7 @@ h3,{
 footer{
 	background-color: rgba(255, 255, 255, 0.8);
 	padding: 0 25px;
-	border-top: solid 1px $egg-shell;
+	border-top: solid 3px $egg-shell;
 }
 
 .footer-wrapper{
@@ -296,7 +296,7 @@ footer{
 
 	.nav-main .nav-item{
 		padding: 25px;
-		border-top: solid 1px $egg-shell;
+		border-top: solid 3px $egg-shell;
 	}
 
 	.nav-item-wrapper {
