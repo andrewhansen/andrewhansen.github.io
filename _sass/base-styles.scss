@@ -186,6 +186,10 @@ h3,{
     padding: 25px;
 }
 
+.logo:hover{
+	opacity: 0.8;
+}
+
 // Hero
 
 .hero-wrapper h1{
@@ -237,12 +241,15 @@ h3,{
     }
 }
 
+// Nav Hero
+
 .nav-hero{
 	display: block;
 	padding: 0 0 100px;
 
 	.nav-item-wrapper{
 		display: inline-block;
+		position: relative
 	}
 
 	.nav-item{
@@ -252,12 +259,32 @@ h3,{
 		text-decoration: none;
 		font-family: COMMUNIS;
 		opacity: 0.8;
+
 	}
 	.nav-item:hover{
-		opacity: 1;
-		padding-bottom: 25px;
-		border-bottom: solid 3px $red;
+		opacity: 1;		
 		-webkit-transition: all .5s ease-in-out;
+	    -moz-transition: all .5s ease-in-out;
+	    -o-transition: all .5s ease-in-out;
+	    transition: all .5s ease-in-out;
+	}
+	.nav-item:after{
+		content: "";
+	    height: 3px;
+	    position: absolute;
+	    bottom: -15px;
+	    left: 50%;
+	    margin-left: -15px;
+	    width: 30px;
+	    background-color: $red;
+	    opacity: 0;
+	}
+	.nav-item:hover:after{
+	    width: 60px;
+	    margin-left: -30px;
+	    background-color: $white;
+	    opacity: 0.5;
+	    -webkit-transition: all .5s ease-in-out;
 	    -moz-transition: all .5s ease-in-out;
 	    -o-transition: all .5s ease-in-out;
 	    transition: all .5s ease-in-out;
