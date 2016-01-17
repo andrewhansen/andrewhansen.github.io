@@ -34,15 +34,18 @@
 			</div>
 			<div class="site-content-wrapper">
 
-
 <div class="center hero-wrapper  hero--green ">
-	<h1>fish</h1>
+	<h1>Andrew Hansen</h1>
 	
 </div>
 
 
 <h3>Graphics</h3>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+
+
 
 
 					<footer>
@@ -89,5 +92,27 @@
 				</div>	
 			</div>
 		</div>
+		
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		
+		<!-- Smooth scrolling, taken from https://css-tricks.com/snippets/jquery/smooth-scrolling/ -->
+		<script>
+			$(function() {
+				$('a[href*=#]:not([href=#])').click(function() {
+    					if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      						var target = $(this.hash);
+      						target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      						if (target.length) {
+        						$('html,body').animate({
+        							scrollTop: target.offset().top
+        						}, 1000);
+        						return false;
+      						}
+    					}
+  				});
+			});
+		</script>
 	</body>
 </html>
+

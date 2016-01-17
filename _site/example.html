@@ -34,7 +34,6 @@
 			</div>
 			<div class="site-content-wrapper">
 
-
 <div class="center hero-wrapper  hero--banner-ice-age ">
 	<h1>Brighton Ice Age</h1>
 	
@@ -67,8 +66,12 @@
 		--><div class="grid_item one-third palm--one-whole lap--one-third desk--one-third">
 			<img src="/img/500x350.png">
 		</div>
-	</div>			
+	</div>
 </div>
+
+
+
+
 
 
 					<footer>
@@ -115,5 +118,27 @@
 				</div>	
 			</div>
 		</div>
+		
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		
+		<!-- Smooth scrolling, taken from https://css-tricks.com/snippets/jquery/smooth-scrolling/ -->
+		<script>
+			$(function() {
+				$('a[href*=#]:not([href=#])').click(function() {
+    					if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      						var target = $(this.hash);
+      						target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      						if (target.length) {
+        						$('html,body').animate({
+        							scrollTop: target.offset().top
+        						}, 1000);
+        						return false;
+      						}
+    					}
+  				});
+			});
+		</script>
 	</body>
 </html>
+
