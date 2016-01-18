@@ -15,18 +15,50 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
-
-	top: 50%; // not sure about this one
-}
-
-.parallax__layer--base {
-	transform: translateZ(0);
-}
-
-.parallax__layer--back {
-	transform: translateZ(-1px) scale(2);
 }
 
 .parallax__layer--menu {
 	transform: translateZ(-2px) scale(3);
+	> img {
+		position: absolute;
+		top: 50%;
+		left: 0;
+	}
+}
+
+
+.parallax__layer--1 {
+	transform: translateZ(0);
+	> img {
+		position: absolute;
+		top: 20%;
+		left: 0;
+	}
+}
+
+.parallax__layer--2 {
+	transform: translateZ(-1px) scale(2);
+	> img {
+		position: absolute;
+		top: 50%;
+		left: 0;
+	}
+}
+
+.parallax__layer--3 {
+	transform: translateZ(-4px) scale(3);
+	> img {
+		position: absolute;
+		top: 70%;
+		left: 0;
+	}
+}
+
+.parallax__layer--4 {
+	transform: translateZ(-6px) scale(5);
+	> img {
+		position: absolute;
+		top: 90%;
+		left: 0;
+	}
 }

@@ -3,14 +3,22 @@
 
 	{% if page.paralax %}
 	<div class="parallax">
-		<div class="parallax__layer parallax__layer--back">
-			<h1>{{ page.title }}</h1>
+		<div class="parallax__layer parallax__layer--1">
+			<img src="img/img-1.jpg" alt="">
 		</div>
-	  <div class="parallax__layer parallax__layer--base">
-		    <h2>{{ page.paralax }}</h2>
+	  <div class="parallax__layer parallax__layer--2">
+		    <img src="img/img-2.jpg" alt="">
+	  </div>
+	  <div class="parallax__layer parallax__layer--3">
+			<img src="img/img-3.jpg" alt="">
+	  </div>
+	  <div class="parallax__layer parallax__layer--4">
+			<img src="img/img-4.jpg" alt="">
 	  </div>
 	  {% if page.subheronav %}
 	  <div class="parallax__layer parallax__layer--menu">
+		  <h1>{{ page.title }}</h1>
+		  <h2>{{ page.paralax }}</h2>
 		  <ul class="nav-hero center">
 			  <li class="nav-item-wrapper">
 				  <a class="nav-item anchorLink"  href="#myAnchor1" rel="" id="anchor1">Illustration</a>
