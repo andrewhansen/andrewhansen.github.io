@@ -20,9 +20,10 @@ $red: #cf443a;
 
 //Imports
 @import "base-styles";
+@import "paralax";
 @import "css-wizardry-grid";
 
 
-h1{
+h1 {
 	color: $primary-colour;
 }

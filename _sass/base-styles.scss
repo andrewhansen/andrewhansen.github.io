@@ -55,7 +55,7 @@ nav {
 	}
 }
 
-// utility 
+// utility
 
 .center{
 	text-align: center;
@@ -89,7 +89,7 @@ h3,{
 	text-align: center;
     margin: 35px 0 35px 0;
     position: relative;
-	
+
 	&--border:after {
 	    content: "";
 	    display: block;
@@ -101,24 +101,6 @@ h3,{
 	    width: 60px;
 	    background-color: $red;
 	}
-}
-
-
-.grid {
-	list-style: none;
-    margin: 0;
-    padding: 0;
-    margin-left: -25px;
-}
-
-.grid_item {
-    display: inline-block;
-    width: 100%;
-    padding-left: 25px;
-    vertical-align: top;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
 }
 
 
@@ -184,7 +166,7 @@ h3,{
 	    -moz-transition: all .5s ease-in-out;
 	    -o-transition: all .5s ease-in-out;
 	    transition: all .5s ease-in-out;
-	}	
+	}
 
 	.nav-item:hover{
 		color: $ash;
@@ -211,13 +193,12 @@ h3,{
 
 // Hero
 
-.hero-wrapper h1{
-	padding-top: 100px;
+.hero-wrapper h1 {
 	text-align: center;
     margin-bottom: 35px;
     position: relative;
     color: $ash;
-	
+
 	&:after {
 	    content: "";
 	    display: block;
@@ -231,7 +212,7 @@ h3,{
 	}
 }
 
-.hero--banner-1{
+.hero--banner-1 {
 	display: block;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -241,6 +222,7 @@ h3,{
     background-image: url(https://d3ui957tjb5bqd.cloudfront.net/images/screenshots/products/22/222/222725/l18vozsaskckgl7szuq89fiyxgqzncva1ct2oa0otowrfspqr14o9u0px0b8hpmn-o.jpg?1414624326);
     background-size: cover;
     background-position: top;
+
     h1{
 		color: $white;
     }
@@ -281,7 +263,7 @@ h3,{
 
 	}
 	.nav-item:hover{
-		opacity: 1;		
+		opacity: 1;
 		-webkit-transition: all .5s ease-in-out;
 	    -moz-transition: all .5s ease-in-out;
 	    -o-transition: all .5s ease-in-out;
@@ -405,7 +387,7 @@ footer{
 }
 
 .social-nav{
-	list-style-type: none;	
+	list-style-type: none;
 	display: block;
 	padding-left: 0;
 	margin-top: 15px;
@@ -493,19 +475,5 @@ footer{
 	}
 	.footer-copy{
 		text-align: right;
-	}
-}
-
-@media (min-height: 620px) {
-	.hero--banner-1{
-		padding: 145px 0;
-	    
-	}
-}
-
-@media (min-height: 1020px) {
-	.hero--banner-1{
-		padding: 400px 0;
-	    
 	}
 }
