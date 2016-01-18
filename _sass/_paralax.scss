@@ -31,8 +31,14 @@
 // Function to work out the scale required when using translateZ
 // See http://keithclark.co.uk/articles/pure-css-parallax-websites/
 @function paralax($translateZ, $perspective: 1) {
+
+	// do the math
 	$scale: 1 + ($translateZ * -1) / $perspective;
+
+	// remove 'px'
 	$scale: $scale / 1px;
+
+	// return
 	@return translateZ($translateZ) scale($scale);
 }
 
@@ -65,10 +71,11 @@
 }
 
 .parallax__layer--4 {
-	transform: paralax(-3px);
+	// don't paralax this one
+	// transform: paralax(-3px);
 	> img {
 		position: absolute;
-		top: 90%;
+		bottom: 0;
 		left: 0;
 	}
 }
