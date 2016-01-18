@@ -28,8 +28,17 @@
 }
 
 
+// Function to work out the scale required when using translateZ
+// See http://keithclark.co.uk/articles/pure-css-parallax-websites/
+@function paralax($translateZ, $perspective: 1) {
+	$scale: 1 + ($translateZ * -1) / $perspective;
+	$scale: $scale / 1px;
+	@return translateZ($translateZ) scale($scale);
+}
+
+
 .parallax__layer--1 {
-	transform: translateZ(0);
+	transform: paralax(0px);
 	> img {
 		position: absolute;
 		top: 20%;
@@ -38,7 +47,7 @@
 }
 
 .parallax__layer--2 {
-	transform: translateZ(-1px) scale(2);
+	transform: paralax(-1px);
 	> img {
 		position: absolute;
 		top: 50%;
@@ -47,7 +56,7 @@
 }
 
 .parallax__layer--3 {
-	transform: translateZ(-4px) scale(3);
+	transform: paralax(-2px);
 	> img {
 		position: absolute;
 		top: 70%;
@@ -56,7 +65,7 @@
 }
 
 .parallax__layer--4 {
-	transform: translateZ(-6px) scale(5);
+	transform: paralax(-3px);
 	> img {
 		position: absolute;
 		top: 90%;
