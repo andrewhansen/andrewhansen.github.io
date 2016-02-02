@@ -110,6 +110,10 @@ h3,{
 	}
 }
 
+.light {
+	color:$white;
+}
+
 
 .site-wrapper {
     position: relative;
@@ -204,7 +208,6 @@ h3,{
 	text-align: center;
     margin-bottom: 35px;
     position: relative;
-    color: $ash;
 
 	&:after {
 	    content: "";
@@ -221,14 +224,8 @@ h3,{
 
 .hero--banner-1 {
 	display: block;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
     width: 100%;
-    display: block;
-    background-attachment: fixed;
-    background-image: url(https://d3ui957tjb5bqd.cloudfront.net/images/screenshots/products/22/222/222725/l18vozsaskckgl7szuq89fiyxgqzncva1ct2oa0otowrfspqr14o9u0px0b8hpmn-o.jpg?1414624326);
-    background-size: cover;
-    background-position: top;
+    background-color: $dark-blue;
 
     h1{
 		color: $white;
@@ -308,6 +305,7 @@ h3,{
 
 .content-block{
 	padding: 25px;
+	background-color:$white;
 }
 
 // Buttons

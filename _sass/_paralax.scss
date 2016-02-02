@@ -44,11 +44,15 @@
 
 
 .parallax__layer--1 {
-	transform: paralax(0px);
+	transform: paralax(-2.5px);
+	background:$dark-blue;
+	background-image:url("/img/spec.png");
+	background-repeat: repeat;
 	> img {
 		position: absolute;
-		top: 20%;
+		top: 5%;
 		left: 0;
+		width: 100%;
 	}
 }
 
@@ -56,26 +60,54 @@
 	transform: paralax(-0.5px);
 	> img {
 		position: absolute;
-		top: 50%;
+		top: 65%;
 		left: 0;
+		width: 100%;
 	}
 }
 
 .parallax__layer--3 {
-	transform: paralax(-0.8px);
+	transform: paralax(-0.4px);
 	> img {
 		position: absolute;
-		top: 70%;
+		top: 80%;
 		left: 0;
+		width: 100%;
 	}
 }
 
 .parallax__layer--4 {
 	// don't paralax this one
-	// transform: paralax(-3px);
+	transform: paralax(-0.3px);
 	> img {
 		position: absolute;
-		bottom: 0;
+		top: 85%;
 		left: 0;
+		width: 100%;
 	}
+}	
+.parallax__layer--5 {
+	z-index: 100;
+	// don't paralax this one
+	// Hero Content section
+	transform:translateZ(-2px) scale(1);
+	> .content-block {
+		position: absolute;
+		top: 90%;
+		left: 0;
+	}	
+}
+
+.parallax__layer--6 {
+	z-index: 200;
+	top: 110%;
+	// don't paralax this one
+	// Home Content section
+	transform: paralax(-0.1px);
+	> .content-block {
+		position: absolute;
+		top: 90%;
+		left: 0;
+    	
+	}	
 }
