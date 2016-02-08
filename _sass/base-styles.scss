@@ -91,6 +91,9 @@ h3,{
 	font-family: COMMUNIS;
 }
 
+.white-font{
+	color:$white;
+}
 
 .heading{
 	text-align: center;
@@ -125,8 +128,10 @@ h3,{
 
 // Nav
 .nav-wrapper{
-	background-color: rgba(255, 255, 255, 0.8);
-	border-right: solid 3px $egg-shell;
+	background-color: $blue;
+	border-right: solid 3px $dark-blue;
+		background-image:url("/img/spec.png");
+	background-repeat: repeat;
 
 	.nav-item{
 		color:$ash-light;
@@ -180,7 +185,7 @@ h3,{
 	}
 
 	.nav-item:hover{
-		color: $ash;
+		color: $white;
 	}
 }
 
@@ -305,6 +310,10 @@ h3,{
 
 .content-block{
 	padding: 25px;
+	background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: 0 0;
+    background-image: url("/img/natural-paper.png");
 	background-color:$white;
 }
 
@@ -357,8 +366,10 @@ h3,{
 .img-heading{
 	position: absolute;
     width: 100%;
+    height: 100%;
     bottom: 3px;
     font-family: COMMUNIS;
+    font-size: 25px;
     margin: 0;
     display: block;
     color: $dark-blue;
@@ -370,20 +381,16 @@ h3,{
 .example-item:hover .img-heading{
     opacity: 1;
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px 0;
-    border-top: solid 3px $red;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
+    padding: 30% 0;
+
 }
 
 // Footer
 
 footer{
-	background-color: rgba(255, 255, 255, 0.8);
+	background-color: rgba(12, 27, 36,0.9);
 	padding: 0 25px;
-	border-top: solid 3px $egg-shell;
+	border-top: solid 3px $dark-blue;
 }
 
 .footer-wrapper{
@@ -410,7 +417,7 @@ footer{
 }
 
 .social-icon:hover{
-	color: $dark-blue;
+	color: $red;
 	border-top: solid 3px $red;
     padding-top: 15px;
     -webkit-transition: all .5s ease-in-out;

@@ -42,10 +42,24 @@
 	@return translateZ($translateZ) scale($scale);
 }
 
-
-.parallax__layer--1 {
+.parallax__layer--0 {
 	transform: paralax(-2.5px);
 	background:$dark-blue;
+    background: -webkit-linear-gradient(#0C1B24, #1A313F); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#0C1B24, #1A313F); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#0C1B24, #1A313F); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#0C1B24, #1A313F); /* Standard syntax (must be last) */
+	> img {
+		position: absolute;
+		top: 5%;
+		left: 0;
+		width: 100%;
+	}
+}
+
+
+.parallax__layer--1 {
+	transform: paralax(-0.7px);
 	background-image:url("/img/spec.png");
 	background-repeat: repeat;
 	> img {
@@ -55,6 +69,8 @@
 		width: 100%;
 	}
 }
+
+
 
 .parallax__layer--2 {
 	transform: paralax(-0.5px);
@@ -81,7 +97,7 @@
 	transform: paralax(-0.3px);
 	> img {
 		position: absolute;
-		top: 85%;
+		top: 80%;
 		left: 0;
 		width: 100%;
 	}
