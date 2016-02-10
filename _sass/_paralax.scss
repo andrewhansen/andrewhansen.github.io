@@ -2,128 +2,148 @@
 // CSS only paralax
 // See http://keithclark.co.uk/articles/pure-css-parallax-websites/
 
-.parallax {
-	perspective: 1px;
-	height: 100vh;
-	overflow-x: hidden;
-	overflow-y: auto;
+@media (max-width: 719px) {
+	.parallax__layer--0,
+	.parallax__layer--1,
+	.parallax__layer--2,
+	.parallax__layer--3,
+	.parallax__layer--4 {
+		display: none;
+	}
+	.parallax__layer.parallax__layer--5 {
+    	background: $dark-blue;
+	}
+	h2.white-font.center {
+    margin: 0;
+    padding: 25px;
 }
 
-.parallax__layer {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
 }
 
-.parallax__layer--menu {
-	transform: translateZ(-2px) scale(3);
-	> span {
+@media (min-width: 720px) {
+	.parallax {
+		perspective: 1px;
+		height: 100vh;
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+
+	.parallax__layer {
 		position: absolute;
-		width: 100%;
-		top: 30%;
+		top: 0;
+		right: 0;
+		bottom: 0;
 		left: 0;
 	}
-}
 
-
-// Function to work out the scale required when using translateZ
-// See http://keithclark.co.uk/articles/pure-css-parallax-websites/
-@function paralax($translateZ, $perspective: 1) {
-
-	// do the math
-	$scale: 1 + ($translateZ * -1) / $perspective;
-
-	// remove 'px'
-	$scale: $scale / 1px;
-
-	// return
-	@return translateZ($translateZ) scale($scale);
-}
-
-.parallax__layer--0 {
-	transform: paralax(-2.5px);
-	background:$dark-blue;
-    background: -webkit-linear-gradient(#0C1B24, #1A313F); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#0C1B24, #1A313F); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#0C1B24, #1A313F); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#0C1B24, #1A313F); /* Standard syntax (must be last) */
-	> img {
-		position: absolute;
-		top: 5%;
-		left: 0;
-		width: 100%;
+	.parallax__layer--menu {
+		transform: translateZ(-2px) scale(3);
+		> span {
+			position: absolute;
+			width: 100%;
+			top: 30%;
+			left: 0;
+		}
 	}
-}
 
 
-.parallax__layer--1 {
-	transform: paralax(-0.7px);
-	background-image:url("/img/spec.png");
-	background-repeat: repeat;
-	> img {
-		position: absolute;
-		top: 5%;
-		left: 0;
-		width: 100%;
+	// Function to work out the scale required when using translateZ
+	// See http://keithclark.co.uk/articles/pure-css-parallax-websites/
+	@function paralax($translateZ, $perspective: 1) {
+
+		// do the math
+		$scale: 1 + ($translateZ * -1) / $perspective;
+
+		// remove 'px'
+		$scale: $scale / 1px;
+
+		// return
+		@return translateZ($translateZ) scale($scale);
 	}
-}
 
-
-
-.parallax__layer--2 {
-	transform: paralax(-0.5px);
-	> img {
-		position: absolute;
-		top: 65%;
-		left: 0;
-		width: 100%;
+	.parallax__layer--0 {
+		transform: paralax(-2.5px);
+		background:$dark-blue;
+	    background: -webkit-linear-gradient(#0C1B24, #1A313F); /* For Safari 5.1 to 6.0 */
+	    background: -o-linear-gradient(#0C1B24, #1A313F); /* For Opera 11.1 to 12.0 */
+	    background: -moz-linear-gradient(#0C1B24, #1A313F); /* For Firefox 3.6 to 15 */
+	    background: linear-gradient(#0C1B24, #1A313F); /* Standard syntax (must be last) */
+		> img {
+			position: absolute;
+			top: 5%;
+			left: 0;
+			width: 100%;
+		}
 	}
-}
 
-.parallax__layer--3 {
-	transform: paralax(-0.4px);
-	> img {
-		position: absolute;
-		top: 80%;
-		left: 0;
-		width: 100%;
-	}
-}
 
-.parallax__layer--4 {
-	// don't paralax this one
-	transform: paralax(-0.3px);
-	> img {
-		position: absolute;
-		top: 80%;
-		left: 0;
-		width: 100%;
+	.parallax__layer--1 {
+		transform: paralax(-0.7px);
+		background-image:url("/img/spec.png");
+		background-repeat: repeat;
+		> img {
+			position: absolute;
+			top: 5%;
+			left: 0;
+			width: 100%;
+		}
 	}
-}	
-.parallax__layer--5 {
-	z-index: 100;
-	// don't paralax this one
-	// Hero Content section
-	transform:translateZ(-2px) scale(1);
-	> .content-block {
-		position: absolute;
-		top: 90%;
-		left: 0;
+
+
+
+	.parallax__layer--2 {
+		transform: paralax(-0.5px);
+		> img {
+			position: absolute;
+			top: 65%;
+			left: 0;
+			width: 100%;
+		}
+	}
+
+	.parallax__layer--3 {
+		transform: paralax(-0.4px);
+		> img {
+			position: absolute;
+			top: 80%;
+			left: 0;
+			width: 100%;
+		}
+	}
+
+	.parallax__layer--4 {
+		// don't paralax this one
+		transform: paralax(-0.3px);
+		> img {
+			position: absolute;
+			top: 80%;
+			left: 0;
+			width: 100%;
+		}
 	}	
-}
+	.parallax__layer--5 {
+		z-index: 100;
+		// don't paralax this one
+		// Hero Content section
+		transform:translateZ(-2px) scale(1);
+		> .content-block {
+			position: absolute;
+			top: 90%;
+			left: 0;
+		}	
+	}
 
-.parallax__layer--6 {
-	z-index: 200;
-	top: 110%;
-	// don't paralax this one
-	// Home Content section
-	transform: paralax(-0.1px);
-	> .content-block {
-		position: absolute;
-		top: 90%;
-		left: 0;
-    	
-	}	
+	.parallax__layer--6 {
+		z-index: 200;
+		top: 110%;
+		// don't paralax this one
+		// Home Content section
+		transform: paralax(-0.1px);
+		> .content-block {
+			position: absolute;
+			top: 90%;
+			left: 0;
+	    	
+		}	
+	}
 }

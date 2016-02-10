@@ -73,6 +73,11 @@ nav {
 	padding-bottom: 25px;
 }
 
+.border-top{
+	border-top: solid 3px $egg-shell;
+	padding-top: 25px;
+}
+
 // utility end
 
 // heading
@@ -129,8 +134,7 @@ h3,{
 // Nav
 .nav-wrapper{
 	background-color: $blue;
-	border-right: solid 3px $dark-blue;
-		background-image:url("/img/spec.png");
+	background-image:url("/img/spec.png");
 	background-repeat: repeat;
 
 	.nav-item{
@@ -363,6 +367,65 @@ h3,{
 	}
 }
 
+.port-wrapper{
+	margin-bottom: 25px;
+	border: solid 3px $ash-light;
+	-webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+	
+	&:hover{
+		border-color: $blue;
+		-webkit-transition: all .5s ease-in-out;
+    	-moz-transition: all .5s ease-in-out;
+    	-o-transition: all .5s ease-in-out;
+    	transition: all .5s ease-in-out;
+	}
+	&:hover .port-heading{
+    	border-color: $blue;
+		-webkit-transition: all .5s ease-in-out;
+    	-moz-transition: all .5s ease-in-out;
+    	-o-transition: all .5s ease-in-out;
+    	transition: all .5s ease-in-out;
+	}
+}
+
+
+// example-items
+
+.port-item{
+	display: block;
+	position: relative;
+
+	& img{
+		opacity: 0.8;
+		-webkit-transition: all .5s ease-in-out;
+    	-moz-transition: all .5s ease-in-out;
+    	-o-transition: all .5s ease-in-out;
+    	transition: all .5s ease-in-out;
+	}
+
+	&:hover img{
+		opacity: 1;
+		-webkit-transition: all .5s ease-in-out;
+    	-moz-transition: all .5s ease-in-out;
+    	-o-transition: all .5s ease-in-out;
+    	transition: all .5s ease-in-out;
+	}
+}
+
+
+.port-heading {
+    border-top: solid $ash-light;
+    width: 100%;
+    display: block;
+    padding: 25px;
+    color: $ash;
+
+}
+
+
 .img-heading{
 	position: absolute;
     width: 100%;
@@ -433,21 +496,78 @@ footer{
 	color:$ash-light;
 }
 
-// parallax
+
 
 @media (max-width: 719px) {
+
+.nav-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+	.menu-wrapper {
+	    display: block;
+	    height: 100px;
+	    position: absolute;
+	    width: 100%;
+	    z-index: 200;
+	    background-color: $blue;
+    background-image: url("/img/spec.png");
+    background-repeat: repeat;
+	}
+
+
+	.menu-toggle-wrapper,
+	.logo-wrapper{
+		width: 50%;
+		float: left;
+		border-bottom: solid 3px $dark-blue;
+	}
+
 	.logo {
+    display: block;
+    margin: 15px;
+    padding: 0;
     height: 70px;
 	}
 
+	.i-main-menu--toggle.js-dropdown-toggle {
+	    color: $white;
+	    padding: 40px 15px;
+	    text-align: right;
+	}	
+
+	.nav-main {
+		padding-top: 100px;
+	    position: absolute;
+    	width: 100%;
+    	z-index: 100;
+    	top: -500px;
+    	-webkit-transition: all .8s ease-in-out;
+	    -moz-transition: all .8s ease-in-out;
+	    -o-transition: all .8s ease-in-out;
+	    transition: all .8s ease-in-out;
+	}
+	
+	.nav-toggle-active .nav-main {
+    	top: 0;
+    	border-bottom: solid 3px $blue;
+    	-webkit-transition: all .8s ease-in-out;
+	    -moz-transition: all .8s ease-in-out;
+	    -o-transition: all .8s ease-in-out;
+	    transition: all .8s ease-in-out;
+	}
+
+
 	.nav-main .nav-item{
 		padding: 25px;
-		border-top: solid 3px $egg-shell;
 	}
 
 	.nav-item-wrapper {
-    	display: inline-block;
-    	width: 49%;
+    	display: block;
+    	width: 100%;
+    	background-color:$dark-blue;
 	}
 	.hero-wrapper h1{
 		padding-top: 50px;
@@ -463,6 +583,45 @@ footer{
 }
 
 @media (min-width: 720px) {
+
+	// -------------------------
+
+	.wave-1 {
+	  animation: Rotate 7s infinite;
+	  transform: Rotate (0deg);
+	  animation-direction: alternate;
+	}
+
+	.wave-2{
+		animation: updown 3s infinite;
+	  	animation-direction: alternate;	
+	}
+
+	@keyframes Rotate {
+	  0% {
+	    transform: Rotate(2deg);
+	  }
+	  100% {
+	    transform: Rotate(-2deg);
+	  }
+	}
+
+	// up down
+
+	@keyframes updown {
+	  0% {
+	    margin-top: -3px;
+	    transform: Rotate(1deg);
+	  }
+	  100% {
+	    margin-top: 3px;
+	    transform: Rotate(-1deg);
+	  }
+	}
+
+	// -----------------------
+
+
 	.nav-wrapper{
 		position: fixed;
 	    left: 0px;
@@ -471,6 +630,10 @@ footer{
 	    overflow: auto;
 	    z-index: 20;
 	    min-height: 600px;
+	    border-right: solid 3px $dark-blue;
+	}
+	.menu-toggle-wrapper {
+    	display: none;
 	}
 	.site-content-wrapper {
 	    overflow: auto;
