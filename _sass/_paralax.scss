@@ -103,6 +103,7 @@
 	}	
 	.parallax__layer--5 {
 		z-index: 100;
+		// Headings
 		// don't paralax this one
 		// Hero Content section
 		transform:translateZ(-2px) scale(1);
@@ -125,6 +126,13 @@
 			left: 0;
 	    	
 		}	
+	}
+	.parallax__layer--5 h1 {
+		font-size: 80px;
+	}
+	.parallax__layer--5 h1,
+	.parallax__layer--5 h2 {
+		opacity: 0.8;
 	}
 }
 
@@ -165,7 +173,12 @@
 	}
 	h2.white-font.center {
     margin: 0;
-    padding: 25px;
+    padding: 0 25px 25px;
 	}
-
+	.parallax__layer--5 h1 {
+		font-size: 50px;
+	}
+	.hero-wrapper h1{
+		margin-bottom: 0; 	
+	}
 }
