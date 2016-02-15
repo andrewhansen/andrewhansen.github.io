@@ -19,6 +19,8 @@ $ash-light: #DFDFDF;
 $ash: #434242;
 $red: #cf443a;
 
+$charcoal: #21272A;
+$charcoal-dark: #141617;
 //Imports
 @import "base-styles";
 @import "paralax";
@@ -26,5 +28,5 @@ $red: #cf443a;
 
 
 h1 {
-	color: $primary-colour;
+	color: $charcoal;
 }

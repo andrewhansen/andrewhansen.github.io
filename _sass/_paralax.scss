@@ -2,24 +2,6 @@
 // CSS only paralax
 // See http://keithclark.co.uk/articles/pure-css-parallax-websites/
 
-@media (max-width: 719px) {
-	.parallax__layer--0,
-	.parallax__layer--1,
-	.parallax__layer--2,
-	.parallax__layer--3,
-	.parallax__layer--4 {
-		display: none;
-	}
-	.parallax__layer.parallax__layer--5 {
-    	background: $dark-blue;
-	}
-	h2.white-font.center {
-    margin: 0;
-    padding: 25px;
-}
-
-}
-
 @media (min-width: 720px) {
 	.parallax {
 		perspective: 1px;
@@ -64,10 +46,10 @@
 	.parallax__layer--0 {
 		transform: paralax(-2.5px);
 		background:$dark-blue;
-	    background: -webkit-linear-gradient(#0C1B24, #1A313F); /* For Safari 5.1 to 6.0 */
-	    background: -o-linear-gradient(#0C1B24, #1A313F); /* For Opera 11.1 to 12.0 */
-	    background: -moz-linear-gradient(#0C1B24, #1A313F); /* For Firefox 3.6 to 15 */
-	    background: linear-gradient(#0C1B24, #1A313F); /* Standard syntax (must be last) */
+	    background: -webkit-linear-gradient(#0C1B24, #2B4F65); /* For Safari 5.1 to 6.0 */
+	    background: -o-linear-gradient(#0C1B24, #2B4F65); /* For Opera 11.1 to 12.0 */
+	    background: -moz-linear-gradient(#0C1B24, #2B4F65); /* For Firefox 3.6 to 15 */
+	    background: linear-gradient(#0C1B24, #2B4F65); /* Standard syntax (must be last) */
 		> img {
 			position: absolute;
 			top: 5%;
@@ -89,13 +71,11 @@
 		}
 	}
 
-
-
 	.parallax__layer--2 {
 		transform: paralax(-0.5px);
 		> img {
 			position: absolute;
-			top: 65%;
+			top: 55%;
 			left: 0;
 			width: 100%;
 		}
@@ -146,4 +126,46 @@
 	    	
 		}	
 	}
+}
+
+@media (max-width: 1020px) {
+	.parallax__layer--2 {
+		transform: paralax(-0.5px);
+		> img {
+			top: 70%;
+		}
+	}
+
+	.parallax__layer--3 {
+		transform: paralax(-0.4px);
+		> img {
+			top: 90%;
+		}
+	}
+
+	.parallax__layer--4 {
+		// don't paralax this one
+		transform: paralax(-0.3px);
+		> img {
+			top: 90%;
+		}
+	}
+}
+
+@media (max-width: 719px) {
+	.parallax__layer--0,
+	.parallax__layer--1,
+	.parallax__layer--2,
+	.parallax__layer--3,
+	.parallax__layer--4 {
+		display: none;
+	}
+	.parallax__layer.parallax__layer--5 {
+    	background: $dark-blue;
+	}
+	h2.white-font.center {
+    margin: 0;
+    padding: 25px;
+	}
+
 }

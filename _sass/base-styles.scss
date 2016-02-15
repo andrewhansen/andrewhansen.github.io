@@ -133,7 +133,7 @@ h3,{
 
 // Nav
 .nav-wrapper{
-	background-color: $blue;
+	background-color: $charcoal;
 	background-image:url("/img/spec.png");
 	background-repeat: repeat;
 
@@ -451,9 +451,9 @@ h3,{
 // Footer
 
 footer{
-	background-color: rgba(12, 27, 36,0.9);
+	background-color: rgba(27, 32, 36, 0.9);
 	padding: 0 25px;
-	border-top: solid 3px $dark-blue;
+	border-top: solid 3px $charcoal-dark;
 }
 
 .footer-wrapper{
@@ -512,7 +512,7 @@ footer{
 	    position: absolute;
 	    width: 100%;
 	    z-index: 200;
-	    background-color: $blue;
+	    background-color: $charcoal;
     background-image: url("/img/spec.png");
     background-repeat: repeat;
 	}
@@ -552,7 +552,7 @@ footer{
 	
 	.nav-toggle-active .nav-main {
     	top: 0;
-    	border-bottom: solid 3px $blue;
+    	border-bottom: solid 3px $charcoal;
     	-webkit-transition: all .8s ease-in-out;
 	    -moz-transition: all .8s ease-in-out;
 	    -o-transition: all .8s ease-in-out;
@@ -567,7 +567,7 @@ footer{
 	.nav-item-wrapper {
     	display: block;
     	width: 100%;
-    	background-color:$dark-blue;
+    	background-color:$charcoal-dark;
 	}
 	.hero-wrapper h1{
 		padding-top: 50px;
@@ -630,7 +630,7 @@ footer{
 	    overflow: auto;
 	    z-index: 20;
 	    min-height: 600px;
-	    border-right: solid 3px $dark-blue;
+	    border-right: solid 3px $charcoal-dark;
 	}
 	.menu-toggle-wrapper {
     	display: none;
