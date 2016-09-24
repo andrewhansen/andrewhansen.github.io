@@ -78,6 +78,10 @@ nav {
 	padding-top: 25px;
 }
 
+.padding-tb-lrg{
+	padding:150px 0;
+}
+
 // utility end
 
 // heading
@@ -149,41 +153,22 @@ h3,{
     	display: block;
     	height: 3px;
     	position: absolute;
-        top: 17px;
+        bottom: 0;
     	left: 15%;
     	width: 15px;
     	background-color: #cf443a;
     	opacity: 0;
 	}
-	.nav-item:after{
-		    content: "";
-    display: block;
-    height: 3px;
-    position: absolute;
-        top: 17px;
-   right: 15%;
-    width: 15px;
-    background-color: #cf443a;
-    opacity: 0;
-	}
+
 
 	.nav-item:hover:before{
-	    left: 20%;
-	    width: 15px;
+	    left: 0;
+	    width: 100%;
 	    opacity: 1;
 	    -webkit-transition: all .5s ease-in-out;
 		-moz-transition: all .5s ease-in-out;
 		-o-transition: all .5s ease-in-out;
 		transition: all .5s ease-in-out;
-	}
-	.nav-item:hover:after{
-    	right: 20%;
-    	width: 15px;
-    	opacity: 1;
-    	-webkit-transition: all .5s ease-in-out;
-	    -moz-transition: all .5s ease-in-out;
-	    -o-transition: all .5s ease-in-out;
-	    transition: all .5s ease-in-out;
 	}
 
 	.nav-item:hover{
@@ -257,55 +242,6 @@ h3,{
     }
 }
 
-// Nav Hero
-
-.nav-hero{
-	display: block;
-	padding: 0 0 100px;
-
-	.nav-item-wrapper{
-		display: inline-block;
-		position: relative
-	}
-
-	.nav-item{
-		padding: 20px;
-		font-size: 25px;
-		color: $white;
-		text-decoration: none;
-		font-family: COMMUNIS;
-		opacity: 0.8;
-
-	}
-	.nav-item:hover{
-		opacity: 1;
-		-webkit-transition: all .5s ease-in-out;
-	    -moz-transition: all .5s ease-in-out;
-	    -o-transition: all .5s ease-in-out;
-	    transition: all .5s ease-in-out;
-	}
-	.nav-item:after{
-		content: "";
-	    height: 3px;
-	    position: absolute;
-	    bottom: -15px;
-	    left: 50%;
-	    margin-left: -15px;
-	    width: 30px;
-	    background-color: $red;
-	    opacity: 0;
-	}
-	.nav-item:hover:after{
-	    width: 60px;
-	    margin-left: -30px;
-	    background-color: $white;
-	    opacity: 0.5;
-	    -webkit-transition: all .5s ease-in-out;
-	    -moz-transition: all .5s ease-in-out;
-	    -o-transition: all .5s ease-in-out;
-	    transition: all .5s ease-in-out;
-	}
-}
 
 // Body
 .content-wrapper{
@@ -321,8 +257,11 @@ h3,{
     background-position: 0 0;
     background-image: url("/img/natural-paper.png");
 	background-color:$white;
-	    max-width: 1280px;
-    margin: auto;
+    
+    &--constraint{
+		max-width: 1280px;
+    	margin: auto;
+    }
 }
 
 // Buttons
@@ -365,6 +304,10 @@ h3,{
 .example-item{
 	display: block;
 	position: relative;
+
+	& img {
+		border: solid 3px $charcoal;
+	}
 
 	&:hover img{
 		opacity: 0.8;
@@ -632,11 +575,10 @@ footer{
 	.nav-wrapper{
 		position: fixed;
 	    width: 100%;
-	    // height: 70px;
+	    top: 0;
 	    z-index: 20;
-	    // border-right: solid 3px $charcoal-dark;
 	    position: fixed;
-    z-index: 20;
+    	z-index: 20;
 
 	}
 

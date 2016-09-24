@@ -1,42 +1,12 @@
-<div class="center hero-wrapper {% if page.heroHelper %} hero--{{ page.heroHelper }} {% endif %}">
-
+<div class="center hero-wrapper {% if page.heroimg %} hero--{{ page.heroimg }} {% endif %}">
 
 	{% if page.paralax %}
-	<div class="parallax">
-		<div class="parallax__layer parallax__layer--1">
-			<img src="img/img-1.jpg" alt="">
-		</div>
-	  <div class="parallax__layer parallax__layer--2">
-		    <img src="img/img-2.jpg" alt="">
-	  </div>
-	  <div class="parallax__layer parallax__layer--3">
-			<img src="img/img-3.jpg" alt="">
-	  </div>
-	  <div class="parallax__layer parallax__layer--4">
-			<img src="img/img-4.jpg" alt="">
-	  </div>
+
 	  {% if page.subheronav %}
-	  <div class="parallax__layer parallax__layer--menu">
-		  <span>
-			  <h1>{{ page.title }}</h1>
-			  <h2>{{ page.paralax }}</h2>
-			  <ul class="nav-hero center">
-				  <li class="nav-item-wrapper">
-					  <a class="nav-item anchorLink"  href="#myAnchor1" rel="" id="anchor1">Illustration</a>
-				  </li>
-				  <li class="nav-item-wrapper">
-					  <a class="nav-item anchorLink"  href="#myAnchor2" rel="" id="anchor2">Graphic Design</a>
-				  </li>
-				  <li class="nav-item-wrapper">
-					  <a class="nav-item anchorLink"  href="#myAnchor3" rel="" id="anchor3">Web Design</a>
-				  </li>
-			  </ul>
-		  </span>
+	  <div class="padding-tb-lrg">
+		<h1 class="heading--lrg">{{ page.heroheading }}</h1>
 	  </div>
 	  {% endif %}
 
-	</div>
-
 	{% endif %}
-
 </div>
