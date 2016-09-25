@@ -62,6 +62,17 @@ nav {
 	}
 }
 
+// content width
+
+.block-wrapper{
+	margin: auto;
+
+	&--lrg{
+		max-width: 1440px;
+	}
+}
+
+
 // utility
 
 .center{
