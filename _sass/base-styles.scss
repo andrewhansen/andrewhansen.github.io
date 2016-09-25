@@ -13,7 +13,11 @@ body {
     background-image: url("/img/natural-paper.png");
     color: $ash;
     font-size: 18px;
-    font-family: Arial, Helvetica, "Helvetica Neue", sans-serif;
+    font-family: "ff-tisa-web-pro",Georgia,serif;
+
+    p{
+		line-height: 2;
+    }
 }
 
 // links
@@ -119,6 +123,27 @@ h3,{
 	color:$white;
 }
 
+.heading-sml{
+	position: relative;
+
+	&--border:after {
+	    content: "";
+	    display: block;
+	    height: 3px;
+	    position: absolute;
+	    bottom: -15px;
+	    left: 0;
+	    width: 60px;
+	    background-color: $charcoal;
+	    opacity: 0.3;
+	}
+	&--border-white:after {
+	    
+	    background-color: $white;
+	    opacity: 0.3;
+	}
+}
+
 .heading{
 	text-align: center;
     margin: 35px 0 35px 0;
@@ -162,6 +187,7 @@ h3,{
 		letter-spacing: 1px;
     	font-size: 16px;
     	position: relative;
+    	opacity: 0.8;
 	}
 	.nav-item:before{
 		content: "";
@@ -188,6 +214,7 @@ h3,{
 
 	.nav-item:hover{
 		color: $white;
+		opacity: 1;
 	}
 }
 
@@ -471,7 +498,8 @@ footer{
 	text-align: center;
 	font-size: 14px;
 	margin: 20px 50px 20px 0;
-	color:$ash-light;
+	color:$charcoal;
+	opacity: 0.5;
 }
 
 
