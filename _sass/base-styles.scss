@@ -78,6 +78,10 @@ nav {
 	&--med{
 		max-width: 1000px;
 	}
+
+	&--sml{
+		max-width: 800px;
+	}
 }
 
 
@@ -99,6 +103,10 @@ nav {
 
 .padding-tb-lrg{
 	padding:150px 0;
+}
+
+.pad-b-50{
+	padding-bottom: 50px;
 }
 
 // utility end
