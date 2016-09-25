@@ -70,6 +70,10 @@ nav {
 	&--lrg{
 		max-width: 1440px;
 	}
+
+	&--med{
+		max-width: 1000px;
+	}
 }
 
 
@@ -253,6 +257,20 @@ h3,{
     }
 }
 
+.hero--drawing-1{
+	display: block;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 100%;
+    display: block;
+    background-image: url(/img/drawing.jpg);
+    background-size: cover;
+    background-position: top;
+    h1{
+		color: $white;
+    }
+}
+
 
 // Body
 .content-wrapper{
@@ -268,11 +286,13 @@ h3,{
     background-position: 0 0;
     background-image: url("/img/natural-paper.png");
 	background-color:$white;
-    
-    &--constraint{
-		max-width: 1280px;
-    	margin: auto;
-    }
+	width: 100%;
+	display:block; 
+
+	&--dark{
+		background-color: $charcoal;
+		background-image: url("/img/spec.png");
+	}
 }
 
 // Buttons
