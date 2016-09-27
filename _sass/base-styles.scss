@@ -111,6 +111,12 @@ nav {
 
 // utility end
 
+// Browser
+.browser{
+	border: solid 3px $ash;
+}
+
+
 // heading
 h1{
 	margin: 0;
@@ -142,7 +148,7 @@ h3,{
 	    bottom: -15px;
 	    left: 0;
 	    width: 60px;
-	    background-color: $charcoal;
+	    background-color: $light-blue;
 	    opacity: 0.3;
 	}
 	&--border-white:after {
@@ -292,6 +298,21 @@ h3,{
     }
 }
 
+.hero--create-home-hero{
+	display: block;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 100%;
+    display: block;
+    background-attachment: fixed;
+    background-image: url(/img/create-home-hero.jpg);
+    background-size: cover;
+    background-position: top;
+    h1{
+		color: $white;
+    }
+}
+
 .hero--drawing-1{
 	display: block;
     background-repeat: no-repeat;
@@ -410,16 +431,29 @@ h3,{
 .port-item{
 	display: block;
 	position: relative;
+	text-decoration: none;
+	opacity: 0.8;
+	-webkit-transition: all .5s ease-in-out;
+    	-moz-transition: all .5s ease-in-out;
+    	-o-transition: all .5s ease-in-out;
+    	transition: all .5s ease-in-out;
 
 	& img{
-		opacity: 0.8;
+	
+		border-bottom: solid $ash-light;
+		
+	}
+	&:hover img {
+		opacity: 1;
+		border-bottom-color:$charcoal;
 		-webkit-transition: all .5s ease-in-out;
     	-moz-transition: all .5s ease-in-out;
     	-o-transition: all .5s ease-in-out;
     	transition: all .5s ease-in-out;
 	}
 
-	&:hover img{
+
+	&:hover {
 		opacity: 1;
 		-webkit-transition: all .5s ease-in-out;
     	-moz-transition: all .5s ease-in-out;
@@ -430,7 +464,6 @@ h3,{
 
 
 .port-heading {
-    border-top: solid $ash-light;
     width: 100%;
     display: block;
     padding: 25px;
