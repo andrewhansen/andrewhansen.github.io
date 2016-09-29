@@ -298,6 +298,36 @@ h3,{
     }
 }
 
+.hero--create-app{
+	display: block;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 100%;
+    display: block;
+    background-attachment: fixed;
+    background-image: url(/img/create-app.jpg);
+    background-size: cover;
+    background-position: top;
+    h1{
+		color: $white;
+    }
+}
+
+.hero--banner-theme{
+	display: block;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 100%;
+    display: block;
+    background-attachment: fixed;
+    background-image: url(/img/banner-theme.jpg);
+    background-size: cover;
+    background-position: top;
+    h1{
+		color: $white;
+    }
+}
+
 .hero--create-home-hero{
 	display: block;
     background-repeat: no-repeat;
@@ -319,7 +349,23 @@ h3,{
     background-position: 50% 50%;
     width: 100%;
     display: block;
+    background-attachment: fixed;
     background-image: url(/img/drawing.jpg);
+    background-size: cover;
+    background-position: top;
+    h1{
+		color: $white;
+    }
+}
+
+.hero--create-pw{
+	display: block;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 100%;
+    display: block;
+    background-attachment: fixed;
+    background-image: url(/img/create-pw.jpg);
     background-size: cover;
     background-position: top;
     h1{
