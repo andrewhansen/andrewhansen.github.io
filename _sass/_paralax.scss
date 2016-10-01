@@ -45,11 +45,11 @@
 
 	.parallax__layer--0 {
 		transform: paralax(-2.5px);
-		background:$dark-blue;
-	    background: -webkit-linear-gradient(#0C1B24, #2B4F65); /* For Safari 5.1 to 6.0 */
-	    background: -o-linear-gradient(#0C1B24, #2B4F65); /* For Opera 11.1 to 12.0 */
-	    background: -moz-linear-gradient(#0C1B24, #2B4F65); /* For Firefox 3.6 to 15 */
-	    background: linear-gradient(#0C1B24, #2B4F65); /* Standard syntax (must be last) */
+		background:#2a1630;
+	    background: -webkit-linear-gradient(#2a1630, #2B4F65); /* For Safari 5.1 to 6.0 */
+	    background: -o-linear-gradient(#2a1630, #2B4F65); /* For Opera 11.1 to 12.0 */
+	    background: -moz-linear-gradient(#2a1630, #2B4F65); /* For Firefox 3.6 to 15 */
+	    background: linear-gradient(#2a1630, #2B4F65); /* Standard syntax (must be last) */
 		> img {
 			position: absolute;
 			top: 5%;
@@ -68,6 +68,7 @@
 			top: 5%;
 			left: 0;
 			width: 100%;
+			opacity: 0.3;
 		}
 	}
 
@@ -130,7 +131,7 @@
 	.parallax__layer--5 h1 {
 		font-size: 80px;
 	}
-	.parallax__layer--5 h1,
+	
 	.parallax__layer--5 h2 {
 		opacity: 0.8;
 	}
