@@ -92,12 +92,12 @@ nav {
 }
 
 .border-bot{
-	border-bottom: solid 3px $egg-shell;
+	border-bottom: solid 3px $ash-light;
 	padding-bottom: 25px;
 }
 
 .border-top{
-	border-top: solid 3px $egg-shell;
+	border-top: solid 3px $ash-light;
 	padding-top: 25px;
 }
 
@@ -107,6 +107,10 @@ nav {
 
 .pad-b-50{
 	padding-bottom: 50px;
+}
+
+.pad-t-50{
+	padding-top: 50px;
 }
 
 // utility end
