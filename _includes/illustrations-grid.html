@@ -1,0 +1,11 @@
+{% for item in site.portfolio-items %}
+	<div class="grid__item one-third palm--one-whole lap--one-half desk--one-third">
+		<div class="example-wrapper">
+			<a class="example-item" href="{{ item.link }}">
+				<img src="{{ item.link }}">
+				<p class="img-heading">{{ item.name }}</p>
+			</a>
+		</div>
+	</div>
+{% endfor %}
+</div><!-- end .grid  -->

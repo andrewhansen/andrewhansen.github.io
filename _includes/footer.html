@@ -34,15 +34,25 @@
 			</div>
 		</div>
 
-		<!-- <script src="/js/toggle.js"></script> -->
-
 		<!-- jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+		<script src="/javascript/magnific-popup.min.js"></script>
 
 		<script>
 			// Menu toggle
 			$(".js-dropdown-toggle").click(function() {
 				$( "body" ).toggleClass( "nav-toggle-active" );
+			});
+
+			// magnific popup
+			$(document).ready(function() {
+			  	$('a.example-item').magnificPopup({
+					type:'image',
+					gallery: {
+				    	enabled: true
+				    },
+			  	});
 			});
 		</script>
 

@@ -1,2 +1,21 @@
 sass:
   style: compressed
+
+
+portfolio-items:
+  - name: Wild Cat Strike
+    link: /img/illustration/wcs-thumb.jpg
+  - name: Jack of Hearts
+    link: /img/illustration/jack-thumb.jpg
+  - name: King &amp; Queen
+    link: /img/illustration/kq-thumb.jpg
+  - name: Brighton Ice Age
+    link: /img/illustration/ice-age-thumb.jpg
+  - name: West Pier
+    link: /img/illustration/pier-thumb.jpg
+  - name: Falling
+    link: /img/illustration/falling-thumb.jpg
+  - name: Baby Mammoth
+    link: /img/graphic-design/baby-m-thumb.jpg
+  - name: PolarSnap
+    link: /img/graphic-design/polarsnap-thumb.jpg
