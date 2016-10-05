@@ -18,6 +18,15 @@
 	font-style: normal;
 }
 
+@font-face{ 
+	font-family: 'museoslab';
+	src: url('/fonts/museoslab/museoslab-webfont.eot');
+	src: url('/fonts/museoslab/museoslab-webfont.eot?iefix') format('eot'),
+	     url('/fonts/museoslab/museoslab-webfont.woff') format('woff'),
+	     url('/fonts/museoslab/museoslab-webfont.ttf') format('truetype'),
+	     url('/fonts/museoslab/museoslab-webfont.svg#webfont') format('svg');
+}
+
 .icon {
 	font-family: 'icomoon';
 	speak: none;
