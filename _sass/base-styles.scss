@@ -431,6 +431,11 @@ h3,{
     -moz-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+
+    &--blue{
+    	border: 3px solid $dark-blue;
+    	color: $dark-blue;	
+    }
 }
 .button:hover {
 	border-color: $white;
@@ -440,6 +445,13 @@ h3,{
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
+
+.button--blue:hover{
+	border: 3px solid $charcoal;
+	color: $white;
+	background-color:$dark-blue;	
+}
+
 .button:active {
 	position:relative;
 	top:1px;
