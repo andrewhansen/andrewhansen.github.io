@@ -101,6 +101,12 @@ nav {
 	padding-top: 25px;
 }
 
+.border-box{
+	border: solid 3px $ash-light;
+	padding: 25px;
+	margin-bottom: 25px;
+}
+
 .padding-tb-lrg{
 	padding:150px 0;
 }
@@ -111,6 +117,10 @@ nav {
 
 .pad-t-50{
 	padding-top: 50px;
+}
+
+.mar-t-25{
+	margin-top: 25px;
 }
 
 // utility end
@@ -294,7 +304,7 @@ h3,{
     background-position: 50% 50%;
     width: 100%;
     display: block;
-    background-image: url(/img/ice-age-banner.jpg);
+    background-image: url(/img/hero-img/ice-age-banner.jpg);
     background-size: cover;
     background-position: top;
     h1{
@@ -309,7 +319,7 @@ h3,{
     width: 100%;
     display: block;
     background-attachment: fixed;
-    background-image: url(/img/create-app.jpg);
+    background-image: url(/img/hero-img/create-app.jpg);
     background-size: cover;
     background-position: top;
     h1{
@@ -324,7 +334,7 @@ h3,{
     width: 100%;
     display: block;
     background-attachment: fixed;
-    background-image: url(/img/banner-theme.jpg);
+    background-image: url(/img/hero-img/banner-theme.jpg);
     background-size: cover;
     background-position: top;
     h1{
@@ -339,7 +349,7 @@ h3,{
     width: 100%;
     display: block;
     background-attachment: fixed;
-    background-image: url(/img/create-home-hero.jpg);
+    background-image: url(/img/hero-img/create-home-hero.jpg);
     background-size: cover;
     background-position: top;
     h1{
@@ -354,7 +364,7 @@ h3,{
     width: 100%;
     display: block;
     background-attachment: fixed;
-    background-image: url(/img/drawing.jpg);
+    background-image: url(/img/hero-img/drawing.jpg);
     background-size: cover;
     background-position: top;
     h1{
@@ -369,7 +379,7 @@ h3,{
     width: 100%;
     display: block;
     background-attachment: fixed;
-    background-image: url(/img/create-pw.jpg);
+    background-image: url(/img/pw-img/create-pw.jpg);
     background-size: cover;
     background-position: top;
     h1{
