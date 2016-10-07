@@ -24,14 +24,18 @@ body {
 
 .body-link{
 	text-decoration: none;
-	color: $red;
+	color: $blue;
+	border-bottom: solid 1px;
+	border-bottom-color: $blue;
 
 	&:hover{
 		border-bottom: solid 3px;
-		-webkit-transition: all .3s ease-in-out;
-	    -moz-transition: all .3s ease-in-out;
-	    -o-transition: all .3s ease-in-out;
-	    transition: all .3s ease-in-out;
+		border-bottom-color: $red;
+		color: $light-blue;
+		-webkit-transition: all .1s ease-in-out;
+	    -moz-transition: all .1s ease-in-out;
+	    -o-transition: all .1s ease-in-out;
+	    transition: all .1s ease-in-out;
 	}
 	&:active {
 		position:relative;
@@ -92,13 +96,19 @@ nav {
 }
 
 .border-bot{
-	border-bottom: solid 3px $egg-shell;
+	border-bottom: solid 3px $ash-light;
 	padding-bottom: 25px;
 }
 
 .border-top{
-	border-top: solid 3px $egg-shell;
+	border-top: solid 3px $ash-light;
 	padding-top: 25px;
+}
+
+.border-box{
+	border: solid 3px $ash-light;
+	padding: 25px;
+	margin-bottom: 25px;
 }
 
 .padding-tb-lrg{
@@ -107,6 +117,14 @@ nav {
 
 .pad-b-50{
 	padding-bottom: 50px;
+}
+
+.pad-t-50{
+	padding-top: 50px;
+}
+
+.mar-t-25{
+	margin-top: 25px;
 }
 
 // utility end
@@ -131,7 +149,8 @@ h2{
 h1,
 h2,
 h3,{
-	font-family: COMMUNIS;
+	font-family: museoslab;
+	letter-spacing: 2px;
 }
 
 .white-font{
@@ -221,10 +240,10 @@ h3,{
 	    left: 0;
 	    width: 100%;
 	    opacity: 1;
-	    -webkit-transition: all .5s ease-in-out;
-		-moz-transition: all .5s ease-in-out;
-		-o-transition: all .5s ease-in-out;
-		transition: all .5s ease-in-out;
+	    -webkit-transition: all .3s ease-in-out;
+		-moz-transition: all .3s ease-in-out;
+		-o-transition: all .3s ease-in-out;
+		transition: all .3s ease-in-out;
 	}
 
 	.nav-item:hover{
@@ -256,7 +275,9 @@ h3,{
 }
 
 // Hero
-
+.hero-wrapper {
+	margin-bottom: 30px;
+}
 .hero-wrapper h1 {
 	text-align: center;
     margin-bottom: 35px;
@@ -291,7 +312,7 @@ h3,{
     background-position: 50% 50%;
     width: 100%;
     display: block;
-    background-image: url(/img/ice-age-banner.jpg);
+    background-image: url(/img/hero-img/ice-age-banner.jpg);
     background-size: cover;
     background-position: top;
     h1{
@@ -306,7 +327,7 @@ h3,{
     width: 100%;
     display: block;
     background-attachment: fixed;
-    background-image: url(/img/create-app.jpg);
+    background-image: url(/img/hero-img/create-app.jpg);
     background-size: cover;
     background-position: top;
     h1{
@@ -321,7 +342,7 @@ h3,{
     width: 100%;
     display: block;
     background-attachment: fixed;
-    background-image: url(/img/banner-theme.jpg);
+    background-image: url(/img/hero-img/banner-theme.jpg);
     background-size: cover;
     background-position: top;
     h1{
@@ -336,7 +357,7 @@ h3,{
     width: 100%;
     display: block;
     background-attachment: fixed;
-    background-image: url(/img/create-home-hero.jpg);
+    background-image: url(/img/hero-img/create-home-hero.jpg);
     background-size: cover;
     background-position: top;
     h1{
@@ -351,7 +372,7 @@ h3,{
     width: 100%;
     display: block;
     background-attachment: fixed;
-    background-image: url(/img/drawing.jpg);
+    background-image: url(/img/hero-img/drawing.jpg);
     background-size: cover;
     background-position: top;
     h1{
@@ -366,7 +387,7 @@ h3,{
     width: 100%;
     display: block;
     background-attachment: fixed;
-    background-image: url(/img/create-pw.jpg);
+    background-image: url(/img/pw-img/create-pw.jpg);
     background-size: cover;
     background-position: top;
     h1{
@@ -400,12 +421,12 @@ h3,{
 
 // Buttons
 .button {
-	background-color: $white;
+
 	border: 3px solid $dark-blue;
 	display:inline-block;
 	cursor:pointer;
-	color: $dark-blue;
-	font-size:20px;
+	color: $ash-light;
+	font-family: Arial, Helvetica, "Helvetica Neue", sans-serif;
 	padding:10px 20px;
 	text-decoration:none;
 	letter-spacing: 1px;
@@ -413,15 +434,27 @@ h3,{
     -moz-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+
+    &--blue{
+    	border: 3px solid $dark-blue;
+    	color: $dark-blue;
+    }
 }
 .button:hover {
-	background-color: $dark-blue;
+	border-color: $white;
 	color: $white;
 	-webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
+
+.button--blue:hover{
+	border: 3px solid $charcoal;
+	color: $white;
+	background-color:$dark-blue;
+}
+
 .button:active {
 	position:relative;
 	top:1px;
@@ -457,14 +490,14 @@ h3,{
     transition: all .5s ease-in-out;
 
 	&:hover{
-		border-color: $blue;
+		border-color: $charcoal-dark;
 		-webkit-transition: all .5s ease-in-out;
     	-moz-transition: all .5s ease-in-out;
     	-o-transition: all .5s ease-in-out;
     	transition: all .5s ease-in-out;
 	}
 	&:hover .port-heading{
-    	border-color: $blue;
+    	border-color: $charcoal-dark;
 		-webkit-transition: all .5s ease-in-out;
     	-moz-transition: all .5s ease-in-out;
     	-o-transition: all .5s ease-in-out;
@@ -509,7 +542,6 @@ h3,{
 	}
 }
 
-
 .port-heading {
     width: 100%;
     display: block;
@@ -518,13 +550,12 @@ h3,{
 
 }
 
-
 .img-heading{
 	position: absolute;
     width: 100%;
     height: 100%;
     bottom: 3px;
-    font-family: COMMUNIS;
+    font-family: museoslab;
     font-size: 25px;
     margin: 0;
     display: block;
@@ -573,13 +604,13 @@ footer{
 }
 
 .social-icon:hover{
-	color: $red;
+	color: $light-blue;
 	border-top: solid 3px $red;
     padding-top: 15px;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .footer-copy{
@@ -594,11 +625,23 @@ footer{
 
 @media (max-width: 719px) {
 
+
+	// heading
+	h1{
+		margin: 0;
+		font-size: 30px;
+	}
+
+	h2{
+		font-size: 20px;
+	}
+
 	.nav-wrapper {
 	    position: relative;
 	    width: 100%;
 	    height: 100px;
 	}
+
 
 	.menu-wrapper {
 	    display: block;
@@ -632,30 +675,40 @@ footer{
 	    text-align: right;
 	}
 
+	.nav-toggle-active .i-main-menu--toggle{
+		background-color:$charcoal-dark;
+		-webkit-transition: all .3s ease-in-out;
+	    -moz-transition: all .3s ease-in-out;
+	    -o-transition: all .3s ease-in-out;
+	    transition: all .3s ease-in-out;
+	}
+
 	.nav-main {
 		padding-top: 100px;
 	    position: absolute;
     	width: 100%;
     	z-index: 100;
     	top: -500px;
-    	-webkit-transition: all .8s ease-in-out;
-	    -moz-transition: all .8s ease-in-out;
-	    -o-transition: all .8s ease-in-out;
-	    transition: all .8s ease-in-out;
+    	-webkit-transition: all .3s ease-in-out;
+	    -moz-transition: all .3s ease-in-out;
+	    -o-transition: all .3s ease-in-out;
+	    transition: all .3s ease-in-out;
 	}
 
 	.nav-toggle-active .nav-main {
     	top: 0;
     	border-bottom: solid 3px $charcoal;
-    	-webkit-transition: all .8s ease-in-out;
-	    -moz-transition: all .8s ease-in-out;
-	    -o-transition: all .8s ease-in-out;
-	    transition: all .8s ease-in-out;
+    	-webkit-transition: all .3s ease-in-out;
+	    -moz-transition: all .3s ease-in-out;
+	    -o-transition: all .3s ease-in-out;
+	    transition: all .3s ease-in-out;
+	    padding-bottom: 50px;
+    	background-color: $charcoal-dark;
 	}
 
 
 	.nav-main .nav-item{
-		padding: 35px 20px;
+		padding: 50px;
 	}
 
 	.nav-item-wrapper {
@@ -673,6 +726,10 @@ footer{
 
 	.nav-hero{
 		display: none;
+	}
+
+	.padding-tb-lrg{
+		padding: 0;
 	}
 }
 
@@ -742,6 +799,7 @@ footer{
 	.nav-main.center {
     	display: inline-block;
     	float: right;
+    	margin-right: 20px;
 	}
 	nav ul li {
 	    display: inline-block;

@@ -1,12 +1,3 @@
-@font-face{ 
-	font-family: 'COMMUNIS';
-	src: url('/fonts/COMMUNIS/COMMUNIS-webfont.eot');
-	src: url('/fonts/COMMUNIS/COMMUNIS-webfont.eot?iefix') format('eot'),
-	     url('/fonts/COMMUNIS/COMMUNIS-webfont.woff') format('woff'),
-	     url('/fonts/COMMUNIS/COMMUNIS-webfont.ttf') format('truetype'),
-	     url('/fonts/COMMUNIS/COMMUNIS-webfont.svg#webfont') format('svg');
-}
-
 @font-face {
 	font-family: 'icomoon';
 	src:url('/fonts/icomoon.eot?-h82il1');
@@ -16,6 +7,15 @@
 		url('/fonts/icomoon.svg?-h82il1#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
+}
+
+@font-face{ 
+	font-family: 'museoslab';
+	src: url('/fonts/museoslab/museoslab-webfont.eot');
+	src: url('/fonts/museoslab/museoslab-webfont.eot?iefix') format('eot'),
+	     url('/fonts/museoslab/museoslab-webfont.woff') format('woff'),
+	     url('/fonts/museoslab/museoslab-webfont.ttf') format('truetype'),
+	     url('/fonts/museoslab/museoslab-webfont.svg#webfont') format('svg');
 }
 
 .icon {
