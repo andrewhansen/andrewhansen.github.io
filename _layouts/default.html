@@ -2,6 +2,15 @@
 
 {% include hero.html %}
 
+<h1 class="heading heading--border heading--lrg">{{ page.title }}</h1>
+
 {{ page.content }}
+
+
+{% if page.title == 'Illustration' %}
+	<div class="block-wrapper block-wrapper--lrg">
+		{% include illustrations-grid.html %}
+	</div>
+{% endif %}
 
 {% include footer.html %}

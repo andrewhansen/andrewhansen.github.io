@@ -1,3 +1,4 @@
+{% include header.html %}
 
 <div class="hero-wrapper {% if page.heroHelper %} hero--{{ page.heroHelper }} {% endif %}">
 	<div class="parallax">
@@ -72,7 +73,7 @@
 
 					<h2 class="heading heading--border heading--lrg">Illustration</h2>
 
-					{% include illustrations-grid.html %}
+					{% include illustrations-grid.html limit=6 %}
 
 
 					</div>
@@ -82,3 +83,6 @@
 	  </div>
 	</div>
 </div>
+
+
+{% include footer.html %}
