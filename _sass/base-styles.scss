@@ -30,7 +30,7 @@ body {
 
 	&:hover{
 		border-bottom: solid 3px;
-		border-bottom-color: $red;
+		border-bottom-color: $light-blue;
 		color: $light-blue;
 		-webkit-transition: all .1s ease-in-out;
 	    -moz-transition: all .1s ease-in-out;
@@ -125,6 +125,10 @@ nav {
 
 .mar-t-25{
 	margin-top: 25px;
+}
+
+.mar-t-50{
+	margin-top: 50px;
 }
 
 // utility end
