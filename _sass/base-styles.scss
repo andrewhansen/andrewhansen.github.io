@@ -176,6 +176,16 @@ h3,{
 	    background-color: $light-blue;
 	    opacity: 0.3;
 	}
+	&--border-red:after {
+	    content: "";
+	    display: block;
+	    height: 3px;
+	    position: absolute;
+	    bottom: -15px;
+	    left: 0;
+	    width: 60px;
+	    background-color: $red;
+	}
 	&--border-white:after {
 
 	    background-color: $white;
