@@ -143,6 +143,7 @@ nav {
 h1{
 	margin: 0;
 	font-size: 50px;
+	color: $charcoal;
 }
 
 h2{
@@ -186,7 +187,7 @@ h3,{
 	    background-color: $red;
 	}
 	&--border-white:after {
-	    
+
 	    background-color: $white;
 	    opacity: 0.3;
 	}
@@ -289,7 +290,9 @@ h3,{
 }
 
 // Hero
-
+.hero-wrapper {
+	margin-bottom: 30px;
+}
 .hero-wrapper h1 {
 	text-align: center;
     margin-bottom: 35px;
@@ -437,7 +440,7 @@ h3,{
     background-image: url("/img/natural-paper.png");
 	background-color:$white;
 	width: 100%;
-	display:block; 
+	display:block;
 
 	&--dark{
 		background-color: $charcoal;
@@ -463,7 +466,7 @@ h3,{
 
     &--blue{
     	border: 3px solid $dark-blue;
-    	color: $dark-blue;	
+    	color: $dark-blue;
     }
 }
 .button:hover {
@@ -478,7 +481,7 @@ h3,{
 .button--blue:hover{
 	border: 3px solid $charcoal;
 	color: $white;
-	background-color:$dark-blue;	
+	background-color:$dark-blue;
 }
 
 .button:active {
@@ -514,7 +517,7 @@ h3,{
     -moz-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
-	
+
 	&:hover{
 		border-color: $charcoal-dark;
 		-webkit-transition: all .5s ease-in-out;
@@ -545,9 +548,9 @@ h3,{
     	transition: all .5s ease-in-out;
 
 	& img{
-	
+
 		border-bottom: solid $ash-light;
-		
+
 	}
 	&:hover img {
 		opacity: 1;
@@ -656,21 +659,23 @@ footer{
 
 @media (max-width: 719px) {
 
-// heading
-h1{
-	margin: 0;
-	font-size: 30px;
-}
 
-h2{
-	font-size: 20px;
-}
+	// heading
+	h1{
+		margin: 0;
+		font-size: 30px;
+	}
 
-.nav-wrapper {
-    position: relative;
-    width: 100%;
-    height: 100px;
-}
+	h2{
+		font-size: 20px;
+	}
+
+	.nav-wrapper {
+	    position: relative;
+	    width: 100%;
+	    height: 100px;
+	}
+
 
 	.menu-wrapper {
 	    display: block;
@@ -679,8 +684,8 @@ h2{
 	    width: 100%;
 	    z-index: 200;
 	    background-color: $charcoal;
-    background-image: url("/img/spec.png");
-    background-repeat: repeat;
+	    background-image: url("/img/spec.png");
+	    background-repeat: repeat;
 	}
 
 
@@ -692,10 +697,10 @@ h2{
 	}
 
 	.logo {
-    display: block;
-    margin: 15px;
-    padding: 0;
-    height: 70px;
+	    display: block;
+	    margin: 15px;
+	    padding: 0;
+	    height: 70px;
 	}
 
 	.i-main-menu--toggle.js-dropdown-toggle {
@@ -703,13 +708,14 @@ h2{
 	    padding: 40px 15px;
 	    text-align: right;
 	}
+
 	.nav-toggle-active .i-main-menu--toggle{
 		background-color:$charcoal-dark;
 		-webkit-transition: all .3s ease-in-out;
 	    -moz-transition: all .3s ease-in-out;
 	    -o-transition: all .3s ease-in-out;
 	    transition: all .3s ease-in-out;
-	}	
+	}
 
 	.nav-main {
 		padding-top: 100px;
@@ -722,7 +728,7 @@ h2{
 	    -o-transition: all .3s ease-in-out;
 	    transition: all .3s ease-in-out;
 	}
-	
+
 	.nav-toggle-active .nav-main {
     	top: 0;
     	border-bottom: solid 3px $charcoal;
@@ -773,7 +779,7 @@ h2{
 
 	.wave-2{
 		animation: updown 3s infinite;
-	  	animation-direction: alternate;	
+	  	animation-direction: alternate;
 	}
 
 	@keyframes Rotate {
@@ -837,7 +843,7 @@ h2{
 	}
 	.site-wrapper {
 
-	    
+
 	}
 	.site-content-wrapper {
 	    width: 100%;

@@ -21,12 +21,10 @@ $red: #cf443a;
 
 $charcoal: #21272A;
 $charcoal-dark: #141617;
+
 //Imports
 @import "base-styles";
 @import "paralax";
 @import "css-wizardry-grid";
-
-
-h1 {
-	color: $charcoal;
-}
+@import "fonts";
+@import "magnific-popup";

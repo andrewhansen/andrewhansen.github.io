@@ -1,2 +1,39 @@
 sass:
   style: compressed
+
+
+portfolio-items:
+  - name: Wild Cat Strike
+    link: /img/illustration/wcs-thumb.jpg
+  - name: Jack of Hearts
+    link: /img/illustration/jack-thumb.jpg
+  - name: King & Queen
+    link: /img/illustration/kq-thumb.jpg
+  - name: Brighton Ice Age
+    link: /img/illustration/ice-age-thumb.jpg
+  - name: West Pier
+    link: /img/illustration/pier-thumb.jpg
+  - name: Falling
+    link: /img/illustration/falling-thumb.jpg
+  - name: Baby Mammoth
+    link: /img/graphic-design/baby-m-thumb.jpg
+  - name: PolarSnap
+    link: /img/graphic-design/polarsnap-thumb.jpg
+  - name: Today's the Last Day
+    link: /img/illustration/entrada-thumb.jpg
+  - name: He Never Died
+    link: /img/illustration/din-thumb.jpg
+  - name: Wild Cat Strike Ep
+    link: /img/illustration/wcs-ep-thumb.jpg
+  - name: Cave Bear
+    link: /img/illustration/bear-thumb.jpg
+  - name: King &amp; Queen
+    link: /img/illustration/kq-thumb.jpg
+  - name: Brighton Ice Age
+    link: /img/illustration/mammoth-thumb.jpg
+  - name: Revenge of The Frozen Lobsters
+    link: /img/illustration/lobster-thumb.jpg
+  - name: Cleo
+    link: /img/illustration/mummy-thumb.jpg
+  - name: Marilyn
+    link: /img/illustration/marilyn-thumb.jpg
